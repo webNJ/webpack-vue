@@ -7,11 +7,11 @@ const AutoDllPlugin = require('autodll-webpack-plugin') //第三方库打包插�
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 module.exports = {
   entry: {
-    bundle: path.resolve(__dirname, '../src/index.js')
+    main: path.resolve(__dirname, '../src/main.js')
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].[hash].js'
+    filename: '[name].js'
   },
   module: {
     rules: [
